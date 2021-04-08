@@ -132,5 +132,98 @@ html{
 }
 
 #messagesContainer{
-    /* background-color: #aaa; */
+    overflow-y: scroll;
+    height: 41.6rem;
+    display: grid;
+    grid-template-rows: repeat(auto-fit,minmax(1rem,cover));
+    grid-template-columns: 1fr;
+    box-sizing: border-box;
+}
+
+
+.MS_Style{
+    font-weight: 100;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0.2rem 0.7rem;
+    background-color: rgb(0, 120, 218);
+    color: white;
+    padding: 0.8rem;
+    border-radius: 1.8rem;
+    font-size: 1.4rem;
+}
+
+.MR_Style{
+    font-weight: 100;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0.2rem 0.7rem;
+    background-color: #555;
+    color: white;
+    padding: 0.8rem;
+    border-radius: 1.8rem;
+    font-size: 1.4rem;
+}
+
+.MS_div{
+    display: flex;
+    max-width: 24rem; 
+    height: min-content; 
+    justify-self: flex-end;  
+
+}
+
+.MR_Container{
+    display: grid;
+    grid-template-columns: 3.4rem 1fr;
+}
+
+.MR_div{
+    display: flex;
+    height: min-content; 
+    max-width: 24rem;
+
+}
+
+.LittleProfilePhoto{
+    width: 2.8rem;
+    height: 2.8rem;
+    align-self: flex-end;
+    margin-bottom: 0.3rem;
+    margin-left: 0.5rem;
+}
+
+.littlePphoto{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.DateTime{
+    color: #999;
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0.7rem;
+    margin-left: 13rem;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 0.7rem;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 0.6rem;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #888; 
 }
