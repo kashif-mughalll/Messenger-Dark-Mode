@@ -3,7 +3,7 @@
     border: 0;
     margin: 0;
     outline: none;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 0.4px;
 }
 
@@ -56,7 +56,7 @@ html{
     height: 52rem;
     width: 37rem;
     position: fixed;
-    top: 7rem;
+    bottom: 3rem;
     right: 2.5rem;
     border-radius: 1.2rem;
     display: grid;
@@ -83,12 +83,45 @@ html{
 #UserName{
     margin-top: 0.5rem;
     color: #ccc;
-    font-size: 1.75rem;
+    font-size: 1.6rem;
 }
+
+#UsernameDiv:hover{
+    background-color: #555;
+}
+
+#ProfileDiv:hover{
+    background-color: #555;
+    border-radius: 2.5rem;
+}
+
+.iconClass1:hover{
+    background-color: #555;
+    border-radius: 50%;
+}
+
+.iconClass2:hover{
+    background-color: #555;
+    border-radius: 50%;    
+}
+
+.iconclass3{
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconclass3:hover{
+    background-color: #555;
+    border-radius: 50%;
+}
+
 
 #Status{
     color: #aaa;
-    font-size: 1.4rem;    
+    font-size: 1.2rem;    
 }
 
 #messageBoxBottom{
@@ -99,9 +132,18 @@ html{
 
 #messagesContainerTray{
     display: grid;
-    grid-template-columns: 13.5rem 18rem 1fr;
+    grid-template-columns: 13.5rem 18.5rem 1fr;
     border-top: 1px solid rgba(85, 85, 85, 0.7);
+    box-shadow: 0 -0.6rem 0.4rem -0.3rem rgba(51, 51, 51, 0.6);
 }
+
+#messagesContainerTray2{
+    display: grid;
+    grid-template-columns: 5rem 1fr 6rem;
+    border-top: 1px solid rgba(85, 85, 85, 0.7);
+    box-shadow: 0 -0.6rem 0.4rem -0.3rem rgba(51, 51, 51, 0.6);
+}
+
 
 #set1{
     position: relative;
@@ -115,15 +157,17 @@ html{
 
 #InputBar{
     height: 3.5rem;
-    width: 17rem;
+    width: 18rem;
     border-radius: 1.7rem;
-    padding: 0 0.7rem;
+    padding: 0.2rem 0.7rem;
     box-sizing: border-box;
     background-color: #666;
     color: white;
     font-size: 1.5rem;
     font-weight: 100;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    resize: none;
+    
 }
 
 ::placeholder { 
@@ -244,9 +288,33 @@ html{
     margin-left: 13rem;
 }
 
+#div54{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 
 
 
+
+@media only screen and (max-width:500px){
+    html{
+        font-size: 0.51rem;
+    }
+}
+
+
+.borderclass1{
+    border-radius: 2rem 2rem 2rem 0rem;
+}
+
+.borderclass2{
+    border-radius: 0rem 2rem 2rem 0rem;
+}
+
+.borderclass3{
+    border-radius: 0rem 2rem 2rem 2rem;
+}
 
 
 
